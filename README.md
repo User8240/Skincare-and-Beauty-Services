@@ -34,34 +34,22 @@ _This is a webpage written in JavaScript XML using bootstrap CSS styling & JavaS
 
 `*[INSERT-APIS]*`
    
-   
----   
-   
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+> ### Research & Planning Log
+> 
+> #### Friday, 09/16
+> * 8:00: Work on Capstone Proposal
+> * 9:00: Come up with possible designs for client
+> * 10:00: Continue designing / drawing
+> * 11:00: Review React CSS lesson
+> * _LUNCH BREAK_
+> * 1:00: Find resources on CSS in React
+> * 3:00: Watch videos / explore resources found
+> * 4:00: Work on README
 
-In the project directory, you can run:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## Known Bugs
 
@@ -70,5 +58,7 @@ _No known issues_
 ## License
 
 _none_
+
+---
 
 Copyright (c) _9/16/2022_ _Grace Kostanich_
