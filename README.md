@@ -35,7 +35,6 @@ _This is a webpage written in JavaScript XML using bootstrap CSS styling & JavaS
 `*[INSERT-APIS]*`
    
 
----
 
 > ### Research & Planning Log
 > 
