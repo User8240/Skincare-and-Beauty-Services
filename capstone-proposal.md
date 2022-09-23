@@ -17,7 +17,6 @@ Grace Kostanich
 * Navigation Menu filled with "Sections" above 
 * Form to collect user information (Name, Form of Contact)
 * Form for user to schedule their treatment (Date, Time)
-* Payment form with **_at least one_** payment type (Credit/Debit Card)
 ---
 ### What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 * React 
@@ -36,4 +35,6 @@ Grace Kostanich
 * emailJS 
 * EmailJS API
 * E-signature API (https://www.useanvil.com/blog/engineering/embedding-e-signatures/)
+* Payment form with **_at least one_** payment type (Credit/Debit Card)
+* 
 ---
