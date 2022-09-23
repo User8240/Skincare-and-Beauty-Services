@@ -35,6 +35,8 @@ _This is a webpage written in JavaScript XML using bootstrap CSS styling & JavaS
 `*[INSERT-APIS]*`
    
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 > ### Research & Planning Log
 > 
@@ -47,6 +49,16 @@ _This is a webpage written in JavaScript XML using bootstrap CSS styling & JavaS
 > * 1:00: Find resources on CSS in React
 > * 3:00: Watch videos / explore resources found
 > * 4:00: Work on README
+
+> #### Friday, 09/23
+> * 9:00: Plan necessary components
+> * 10:00: Begin component diagram
+> * 11:00: Create project | Clean up files
+> * 11:30: Update Capstone Proposal with MVP correction
+> * _LUNCH BREAK_
+> * 1:00: Implement components 
+> * 2:00: Update / fix component diagram
+> * 4:00: Continue to build out basic component structure 
 
 
 
