@@ -6,11 +6,11 @@ function Header(){
     <React.Fragment>
       <h1> CLIENT-BUSINESS-NAME-HERE </h1>
 
-      <p>
+      {/* <p> */}
       {/* BELOW: DELETE THESE LATER - HERE FOR TESTING PURPOSES */}
-      <Link to="/">Home</Link>
-      <Link to="/sign-in">Admin Sign In</Link>
-      </p>
+        {/* <Link to="/">Home</Link> */}
+        {/* <Link to="/sign-in">Admin Sign In</Link> */}
+      {/* </p> */}
 
     </React.Fragment>
   );
