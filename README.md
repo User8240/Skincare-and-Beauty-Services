@@ -60,6 +60,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > * 2:00: Update / fix component diagram
 > * 4:00: Continue to build out basic component structure 
 
+> #### Friday, 09/30
+> * 9:11: Continue adding to basic component structure 
+
+
 
 
 ## Known Bugs
