@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import AppointmentForm from './AppointmentForm';
 import Home from './Home';
+import Navbar from './Navbar';
 import AppointmentList from './AppointmentList';
 import AppointmentDetail from './AppointmentDetail';
 // import { collection, addDoc, doc, updateDoc, onSnapshot, deleteDoc, query, orderBy } from "firebase/firestore";
@@ -18,6 +19,15 @@ function AppointmentControl() {
   
   let currentlyVisibleState = null;
 
+
+  const handleClick = () => {
+    setFormVisibleOnPage(!formVisibleOnPage);
+  }
+
+
+  const returnHome= () => {
+    setFormVisibleOnPage(false);
+  }
 
   const handleAddingAppointmentToList = (newAppointment) => {
     const newMainAppointmentList = mainAppointmentList.concat(newAppointment);
@@ -36,15 +46,21 @@ function AppointmentControl() {
 
   if (formVisibleOnPage) {
     currentlyVisibleState = 
-    <AppointmentForm 
-     onAppointmentCreation={handleAddingAppointmentToList}/>; 
+      <AppointmentForm 
+        handleClick={handleClick}
+        onAppointmentCreation={handleAddingAppointmentToList}/>;
   } else {
-    currentlyVisibleState = <Home />;
+    currentlyVisibleState = 
+      <Home 
+      handleClick={handleClick}/>;
+
   }
     
 
   return (
     <React.Fragment>
+      <Navbar 
+        returnHome={returnHome}/>;
       {currentlyVisibleState}
     </React.Fragment>
   );
