@@ -62,6 +62,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 > #### Friday, 09/30
 > * 9:11: Continue adding to basic component structure 
+> * 10:11: WIP: Build out controller component
 
 
 
