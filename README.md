@@ -66,6 +66,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > * 11:04: WIP: Connect Home and Controller components
 > * 11:57: WIP: Bugfixing components
 > * 1:13: Begin adding necessary functions in controller
+> * 3:00: Create toggle button
 
 
 
