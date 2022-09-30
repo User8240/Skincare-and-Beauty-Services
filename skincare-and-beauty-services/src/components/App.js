@@ -13,7 +13,7 @@ function App(){
       {/* BELOW this lets us add multiple routes that have separate paths */}
       <Routes>
         {/* BELOW this lets us add the component the application should route to (as well as the corresponding path)*/}
-        <Route path="/sign-in" element={<SignIn />} />
+        {/* <Route path="/sign-in" element={<SignIn />} /> */}
         <Route path="/" element={<AppointmentControl />} />
         
       </Routes>
