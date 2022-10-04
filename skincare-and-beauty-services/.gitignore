@@ -12,6 +12,7 @@
 /build
 
 # misc
+#commit env again
 .DS_Store
 .env
 .env.local
