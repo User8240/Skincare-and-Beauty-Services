@@ -72,6 +72,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > #### Tuesday, 10/4
 > * 9:00: Begin to add firebase to project
 > * 10:07: WIP: Continue to implement firebase
+> * 11:03: WIP: Refactor code to use firebase
 
 ## Known Bugs
 
