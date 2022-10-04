@@ -5,6 +5,8 @@ import Home from './Home';
 import Navbar from './Navbar';
 import AppointmentList from './AppointmentList';
 import AppointmentDetail from './AppointmentDetail';
+import db from './../firebase.js'
+import { collection, addDoc } from "firebase/firestore";
 // import { collection, addDoc, doc, updateDoc, onSnapshot, deleteDoc, query, orderBy } from "firebase/firestore";
 // import { db, auth } from './../firebase.js';
 // import { formatDistanceToNow } from 'date-fns';
@@ -14,14 +16,12 @@ function AppointmentControl() {
   const [formVisibleOnPage, setFormVisibleOnPage] = useState(false);
   const [mainAppointmentList, setMainAppointmentList] = useState([]);
   
-  //set form visible to true temporarily 
-  // setFormVisibleOnPage(true);
-  
   let currentlyVisibleState = null;
 
 
   const handleClick = () => {
     setFormVisibleOnPage(!formVisibleOnPage);
+    // console.log(mainAppointmentList)
   }
 
 
@@ -29,19 +29,11 @@ function AppointmentControl() {
     setFormVisibleOnPage(false);
   }
 
-  const handleAddingAppointmentToList = (newAppointment) => {
-    const newMainAppointmentList = mainAppointmentList.concat(newAppointment);
-    setMainAppointmentList(newMainAppointmentList);
-    setFormVisibleOnPage(false)
+  //firebase POST request | Function above refactored
+  const handleAddingAppointmentToList = async (newAppointmentData) => {
+    setFormVisibleOnPage(false);
+    await addDoc(collection(db, "appointments"), newAppointmentData);
   }
-
-  // const handleAddingNewTicketToList = (newTicket) => {
-  //   // new code!
-  //   const newMainTicketList = mainTicketList.concat(newTicket);
-  //   // new code!
-  //   setMainTicketList(newMainTicketList);
-  //   setFormVisibleOnPage(false)
-  // }
 
 
   if (formVisibleOnPage) {
@@ -64,7 +56,6 @@ function AppointmentControl() {
       {currentlyVisibleState}
     </React.Fragment>
   );
-
 
 }  
 
