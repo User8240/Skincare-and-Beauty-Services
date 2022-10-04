@@ -33,12 +33,12 @@ function AppointmentForm(props){
           // BELOW: Update to a drop down menu *(client will be able to update drop down list)*
           placeholder="Choose A Service You'd Like Done" /> 
         <input
-          type='text'
+          type='date'
           name='date'
           // BELOW: Update to a drop down menu *(client will be able to update drop down list)*
           placeholder="Choose A Date" /> 
         <input
-          type='text'
+          type='time'
           name='time'
           // BELOW: Update to a drop down menu *(client will be able to update drop down list)*
           placeholder="Choose A Time" /> 
