@@ -74,6 +74,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > * 10:07: WIP: Continue to implement firebase
 > * 11:03: WIP: Refactor code to use firebase
 > * 1:03: BUGFIX: Get data to firebase
+> * 2:06: Pull data from firebase
 
 ## Known Bugs
 
