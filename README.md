@@ -76,6 +76,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > * 1:03: BUGFIX: Get data to firebase
 > * 2:06: Pull data from firebase
 > * 3:20: Setup listener on appointment list
+> * 4:11: Begin implementing Admin pages
 
 ## Known Bugs
 
