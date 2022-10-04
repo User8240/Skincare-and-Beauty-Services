@@ -69,7 +69,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > * 3:00: Create toggle button
 > * 4:04: Add navigation bar & necessary functionality  
 
-
+> #### Tuesday, 10/4
+> * 9:00: Begin to add firebase to project
 
 ## Known Bugs
 
