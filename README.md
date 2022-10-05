@@ -86,6 +86,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > * 11:08: Add necessary functionality for all admin components
 > * _LUNCH BREAK_
 > * 1:15: Continue adding necessary functions to controller
+> * 2:12: WIP: Structure the admin components
 
 ## Known Bugs
 
