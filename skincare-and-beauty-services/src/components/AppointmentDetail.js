@@ -4,10 +4,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function AppointmentDetail(props){
-  const { appointment } = props; 
-  //LATER deconstruct onAppointmentCompletion - have to create this function first
-  
-  //IMPLEMENT DELETE FUNCTIONALITY LATER - OR WRITE FUNCTION TO DELETE APPOINTMENT AT A SPECIFIED TIME
+  const { appointment, onAppointmentCompletion } = props; 
 
 
   return (
@@ -20,7 +17,7 @@ function AppointmentDetail(props){
         <p>{props.additionalInfo}</p> 
         <hr/>
 
-      {/* <button onClick={()=> onAppointmentCompletion(appointment.id)}>Appointment Completed</button> */}
+      <button onClick={()=> onAppointmentCompletion(appointment.id)}>Appointment Completed</button>
       <hr/>
     </React.Fragment>
   );
@@ -28,8 +25,8 @@ function AppointmentDetail(props){
 
 AppointmentDetail.propTypes = {
   appointment: PropTypes.object,
+  onAppointmentCompletion: PropTypes.func
 };
 
-//LATER add onAppointmentCompletion (which was previously known as onClickingDelete)
 
 export default AppointmentDetail;
