@@ -10,9 +10,6 @@ function Appointment(props){
       <div onClick = {() => props.whenTicketClicked(props.id)}>
         <h3>{props.firstName} {props.lastName}</h3>
         <p>{props.date} at {props.time}</p>
-        <p><em>{props.serviceType}</em></p>
-        <p>Additional Information:</p>
-        <p>{props.additionalInfo}</p> 
         <hr/>
       </div>
     </React.Fragment>
@@ -26,6 +23,7 @@ Appointment.propTypes = {
   time: PropTypes.string,
   serviceType: PropTypes.string,
   additionalInfo: PropTypes.string,
+  id: PropTypes.string,
   whenAppointmentClicked: PropTypes.func
 }
 
