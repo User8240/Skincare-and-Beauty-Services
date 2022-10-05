@@ -6,19 +6,19 @@ import Navbar from './Navbar';
 import AppointmentList from './AppointmentList';
 import AppointmentDetail from './AppointmentDetail';
 import db from './../firebase.js'
-import { collection, addDoc, onSnapshot } from "firebase/firestore";
-// import { collection, addDoc, doc, updateDoc, onSnapshot, deleteDoc, query, orderBy } from "firebase/firestore";
+import { collection, addDoc, onSnapshot, deleteDoc, doc, query, orderBy } from "firebase/firestore";
 // import { db, auth } from './../firebase.js';
-// import { formatDistanceToNow } from 'date-fns';
+
 
 function AppointmentControl() {
   //useState
   const [formVisibleOnPage, setFormVisibleOnPage] = useState(false);
   const [mainAppointmentList, setMainAppointmentList] = useState([]);
-  // const [selectedTicket, setSelectedTicket] = useState(null);
+  const [selectedAppointment, setSelectedAppointment] = useState(null);
   const [error, setError] = useState(null);
   
   let currentlyVisibleState = null;
+
 
 //to listen to the list for every change made to the database
   useEffect(() => { 
@@ -48,29 +48,70 @@ function AppointmentControl() {
     return () => unSubscribe();
   }, []);
 
-  console.log(mainAppointmentList);
+  // console.log(mainAppointmentList);
 
-
+  // Toggle button toggles the form off and on to display Home OR AppointmentForm component
   const handleClick = () => {
     setFormVisibleOnPage(!formVisibleOnPage);
-    // console.log(mainAppointmentList)
   }
 
-
+  // Home button force-displays the Home component (accessed in NavBar)
   const returnHome= () => {
     setFormVisibleOnPage(false);
   }
 
-  //firebase POST request | Function above refactored
+  //firebase POST request that adds data to database and display
   const handleAddingAppointmentToList = async (newAppointmentData) => {
     setFormVisibleOnPage(false);
     await addDoc(collection(db, "appointments"), newAppointmentData);
   }
 
+// Based on the ID of a selected ticket (coming from detail page), this will delete the ticket from the database
+  const handleDeletingAppointment = async (id) => {
+    await deleteDoc(doc(db, "appointments", id));
+    setSelectedAppointment(null);
+  } 
+
+
+  const handleSelectedAppointment = (id) => {
+    const selection = mainAppointmentList.filter(appointment => appointment.id === id)[0];
+    // new code!
+    setSelectedAppointment(selection);
+  }
+
+  //FOR TESTING TICKET LISTS DISPLAY
+  // currentlyVisibleState = 
+  // <AppointmentList 
+  // onAppointmentSelection = {handleSelectedAppointment}
+  // appointmentList={mainAppointmentList} />;
+
+
+if (auth.currentUser != null){
+  // If the admin is signed in:
+  // *cycle between admin components for the currentlyVisibleState*
 
   if (error) {
     currentlyVisibleState = <p>There was an error: {error}</p>
-  } else if (formVisibleOnPage) {
+  } else if (selectedAppointment != null) {
+    currentlyVisibleState = <AppointmentDetail 
+    appointment={selectedAppointment} 
+    onAppointmentCompletion={handleDeletingAppointment} />
+    // buttonText = "Return to Ticket List";
+  } else {
+    currentlyVisibleState = 
+    <AppointmentList 
+    onAppointmentSelection = {handleSelectedAppointment}
+    appointmentList={mainAppointmentList} />;
+  }
+
+  // other components to add?
+  // new available time form?
+
+} else if (auth.currentUser == null) {
+  // If the admin is NOT signed in:
+  // *cycle between user components for the currentlyVisibleState*
+
+  if (formVisibleOnPage) {
     currentlyVisibleState = 
       <AppointmentForm 
         handleClick={handleClick}
@@ -79,9 +120,9 @@ function AppointmentControl() {
     currentlyVisibleState = 
       <Home 
       handleClick={handleClick}/>;
-
   }
-    
+}
+
 
   return (
     <React.Fragment>
