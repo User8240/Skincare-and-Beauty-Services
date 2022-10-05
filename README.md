@@ -65,6 +65,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > * 10:11: WIP: Build out controller component
 > * 11:04: WIP: Connect Home and Controller components
 > * 11:57: WIP: Bugfixing components
+> * _LUNCH BREAK_
 > * 1:13: Begin adding necessary functions in controller
 > * 3:00: Create toggle button
 > * 4:04: Add navigation bar & necessary functionality  
@@ -73,6 +74,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > * 9:00: Begin to add firebase to project
 > * 10:07: WIP: Continue to implement firebase
 > * 11:03: WIP: Refactor code to use firebase
+> * _LUNCH BREAK_
 > * 1:03: BUGFIX: Get data to firebase
 > * 2:06: Pull data from firebase
 > * 3:20: Setup listener on appointment list
@@ -82,6 +84,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > * 9:06: WIP: Build out Admin components 
 > * 10:17: BUGFIX: Continue to build out and bugfix admin components
 > * 11:08: Add necessary functionality for all admin components
+> * _LUNCH BREAK_
 
 ## Known Bugs
 
