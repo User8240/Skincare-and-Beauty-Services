@@ -80,6 +80,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 > #### Wednesday, 10/5
 > * 9:06: WIP: Build out Admin components 
+> * 10:17: BUGFIX: Continue to build out and bugfix admin components
 
 ## Known Bugs
 
