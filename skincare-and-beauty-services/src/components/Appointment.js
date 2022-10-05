@@ -7,7 +7,7 @@ function Appointment(props){
 
   return (
     <React.Fragment>
-      <div onClick = {() => props.whenTicketClicked(props.id)}>
+      <div onClick = {() => props.whenAppointmentClicked(props.id)}>
         <h3>{props.firstName} {props.lastName}</h3>
         <p>{props.date} at {props.time}</p>
         <hr/>
