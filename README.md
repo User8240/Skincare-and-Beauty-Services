@@ -88,6 +88,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > * 1:15: Continue adding necessary functions to controller
 > * 2:12: WIP: Structure the admin components
 > * 2:54: Restructure currently visible states if statement for authentication
+> * 4:30: WIP: Implement authentication
 
 ## Known Bugs
 
