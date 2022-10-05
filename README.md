@@ -78,6 +78,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > * 3:20: Setup listener on appointment list
 > * 4:11: Begin implementing Admin pages
 
+> #### Wednesday, 10/5
+> * 9:06: WIP: Build out Admin components 
+
 ## Known Bugs
 
 _No known issues_
