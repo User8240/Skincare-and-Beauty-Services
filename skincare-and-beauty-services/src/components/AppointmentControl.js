@@ -5,9 +5,8 @@ import Home from './Home';
 import Navbar from './Navbar';
 import AppointmentList from './AppointmentList';
 import AppointmentDetail from './AppointmentDetail';
-import db from './../firebase.js'
 import { collection, addDoc, onSnapshot, deleteDoc, doc, query, orderBy } from "firebase/firestore";
-// import { db, auth } from './../firebase.js';
+import { db, auth } from './../firebase.js';
 
 
 function AppointmentControl() {
@@ -19,8 +18,7 @@ function AppointmentControl() {
   
   let currentlyVisibleState = null;
 
-
-//to listen to the list for every change made to the database
+  //to listen to the list for every change made to the database
   useEffect(() => { 
     const unSubscribe = onSnapshot(
       collection(db, "appointments"), 
@@ -75,6 +73,7 @@ function AppointmentControl() {
 
   const handleSelectedAppointment = (id) => {
     const selection = mainAppointmentList.filter(appointment => appointment.id === id)[0];
+    console.log(selection);
     // new code!
     setSelectedAppointment(selection);
   }
@@ -85,6 +84,7 @@ function AppointmentControl() {
   // onAppointmentSelection = {handleSelectedAppointment}
   // appointmentList={mainAppointmentList} />;
 
+let navbar = null;
 
 if (auth.currentUser != null){
   // If the admin is signed in:
@@ -95,7 +95,7 @@ if (auth.currentUser != null){
   } else if (selectedAppointment != null) {
     currentlyVisibleState = <AppointmentDetail 
     appointment={selectedAppointment} 
-    onAppointmentCompletion={handleDeletingAppointment} />
+    onAppointmentCompletion={handleDeletingAppointment} />;
     // buttonText = "Return to Ticket List";
   } else {
     currentlyVisibleState = 
@@ -110,6 +110,8 @@ if (auth.currentUser != null){
 } else if (auth.currentUser == null) {
   // If the admin is NOT signed in:
   // *cycle between user components for the currentlyVisibleState*
+  navbar = <Navbar 
+  returnHome={returnHome} />;
 
   if (formVisibleOnPage) {
     currentlyVisibleState = 
@@ -126,8 +128,7 @@ if (auth.currentUser != null){
 
   return (
     <React.Fragment>
-      <Navbar 
-        returnHome={returnHome}/>;
+      {navbar}
       {currentlyVisibleState}
     </React.Fragment>
   );
