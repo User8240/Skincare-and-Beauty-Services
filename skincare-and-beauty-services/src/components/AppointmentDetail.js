@@ -9,12 +9,12 @@ function AppointmentDetail(props){
 
   return (
     <React.Fragment>
-      <h1>{props.firstName} {props.lastName}'s Appointment Details</h1>
+      <h1>{appointment.firstName} {appointment.lastName}'s Appointment Details</h1>
 
-        <p>{props.date} at {props.time}</p>
-        <p>Scheduled for <em>{props.serviceType}</em></p>
+        <p>{appointment.date} at {appointment.time}</p>
+        <p>Scheduled for <em>{appointment.serviceType}</em></p>
         <p>Additional Information:</p>
-        <p>{props.additionalInfo}</p> 
+        <p>{appointment.additionalInfo}</p> 
         <hr/>
 
       <button onClick={()=> onAppointmentCompletion(appointment.id)}>Appointment Completed</button>
