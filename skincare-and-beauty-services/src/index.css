@@ -5,9 +5,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(253, 239, 239);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button {
+  font-weight: bolder; 
+  background-color: #D8E2DC;
+  border-radius: 6px;
+  border: 3px solid #D8E2DC;
+  color: black;
+  margin: 0 1em;
+  padding: 0.25em 1em;
+
+}
+
+.button-center {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.BIG {
+  font-size: 72px;
+}
+
+/* Color pallette */
+/* d8e2dc - (blueish green)*/  
+/* ffe5d9 - (cream)*/
+/* ffcad4 - (light pink)*/
+/* f4acb7 - (dark pink)*/
+/* 9d8189 - (ashe purple)*/
