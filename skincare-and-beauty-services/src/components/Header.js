@@ -1,14 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import * as style from "../StyleComponents"
 
 function Header(){
   return (
     <React.Fragment>
-      <h1> CLIENT-BUSINESS-NAME-HERE </h1>
+      <style.Header> 
+        <h1 className="BIG">Skincare & Beauty Services</h1>
+      </style.Header>      
 
       {/* <p> */}
       {/* BELOW: DELETE THESE LATER - HERE FOR TESTING PURPOSES */}
-        {/* <Link to="/">Home</Link> */}
         {/* <Link to="/sign-in">Admin Sign In</Link> */}
       {/* </p> */}
 
