@@ -2,40 +2,98 @@
 
 #### By _**Grace Kostanich**_    
 
+#### A website made for providing skincare and cosmetic services to users. It will give users the ability to schedule & purchase a variety of treatments and services from a licensed esthetician. All bookings and financial processes will be done within the webpage.   
+*`Project still in development`*
 
-#### A website made for providing skincare and cosmetic services to users. It will give users the ability to schedule & purchase a variety of treatments and services from an esthetician. All bookings and financial processes will be done within the webpage.
+---
+
+## Description
+
+_This is a React application using styled-components and bootstrap CSS for styling. It uses JavaScript for all functionality, and a cloud-hosted Firestore database._
 
 ---
 
 ## Technologies Used
 
-* _React_
-* _JavaScript_
-* _JSX_
+```
+React
+JavaScript
+CSS
+HTML
+Firebase
+```
 
-## Description
+## Setup and Installation Requirements
+**⚠️ This Setup assumes you have GitBash pre-installed ⚠️**
 
-_This is a webpage written in JavaScript XML using bootstrap CSS styling & JavaScript for functionality._
+If needed, please navigate to this link:  
+https://git-scm.com/download/  
+Download Git and follow the setup wizard. 
+
+**NOTE**: _For security purposes, the actual .env file for this project will not be provided. If you'd like to run this project, see_ [Creating a Firestore Database](#skincare-&-beauty-services---setup)
+
+---
+
+# Skincare & Beauty Services - `Setup`
+
+<details>
+<summary><strong>Creating a Firestore Database</strong></summary>
+<ol>
+<li>Navigate to <a href="https://firebase.google.com/">Firebase</a>
+<strong>bold text</strong>
+<br>
+</details>
+
+ 
+<details>
+<summary><strong>Running the Application in Your Browser</strong></summary>
+<ol>
+<li>Copy the git repository url: https://github.com/User8240/Skincare-and-Beauty-Services.git
+<li>Open a GitBash terminal and navigate to your Desktop with <strong>cd</strong> command
+<li>Run,  
+<strong>$ git clone https://github.com/User8240/Skincare-and-Beauty-Services.git</strong>
+<li>In the terminal, navigate into the <em>projects</em> root directory,"skincare-and-beauty-services".
+<li>Run,  
+<strong>$ npm install</strong>
+<li>Once the installation is completed, run  
+<strong>$ npm run start</strong>
+<br>
+</details>
+
+---
+## Paths
+
+Note: [YOUR-PORT-#] will be automatically provided by your system when you run the application 
+
+#### Home page URL
+```
+http://localhost:[YOUR-PORT-#]
+```
+#### Admin Portal URL
+```
+http://localhost:[YOUR-PORT-#]/sign-in
+```
+
+#### Example URL's
+```
+http://localhost:3000
+http://localhost:3000/sign-in
+```
 
 
-## Setup/Installation Requirements
+## Project Component Diagram
 
-* _Fork project to your own GitHub repository_ 
-* _Clone that repository to your desktop_
-* _Open the project_
-* _Run `npm install` in the root directory of the project_
-* _Run `npm run start` to view the webpage in your browser!_
+![Image](component-diagram.png)
 
-## Component Diagram
+---
+ 
+This program was built using [Create React App](https://github.com/facebook/create-react-app).
+ 
+---
 
-`*[INSERT-DIAGRAM]*`
+## Known Bugs
 
-## APIs
-
-`*[INSERT-APIS]*`
-   
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_While signed in, the admin portal will temporarily display the main homepage before checking if an authenticated user is signed in._
 
 
 > ### Research & Planning Log
@@ -90,14 +148,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > * 2:54: Restructure currently visible states if statement for authentication
 > * 4:30: WIP: Implement authentication
 
-## Known Bugs
-
-_No known issues_
-
 ## License
 
-_none_
-
----
+[MIT](https://opensource.org/osd)
 
 Copyright (c) _9/16/2022_ _Grace Kostanich_
