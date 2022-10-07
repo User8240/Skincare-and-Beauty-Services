@@ -1,14 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import * as style from "../StyleComponents"
 
 
 function Navbar(props){
   const { returnHome } = props;
 
   return (
-    <React.Fragment>
-      <button onClick={returnHome}>HOME</button> 
-    </React.Fragment>
+    <style.Navbar>
+      <button className="button-center" onClick={returnHome}>HOME</button> 
+    </style.Navbar>
   );
 }
 
