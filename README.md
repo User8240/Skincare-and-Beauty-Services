@@ -68,7 +68,7 @@ Download Git and follow the setup wizard.
 <li>On the left-hand menu bar, select "Project Overview"
 <li>On the homepage, underneath "Get started by adding Firebase to app", select the:
 <br>
-<img src="icon.jpg" alt="</> icon">
+<img src="icon.JPG" alt="</> icon">
 <li>For the App nickname, call this "skincare-beauty-services-app" then select "Register app"
 <li>Select "Continue to console"
 <br>
