@@ -24,7 +24,7 @@ Firebase
 ```
 
 ## Setup and Installation Requirements
-**⚠️ This Setup assumes you have GitBash pre-installed ⚠️**
+**⚠️ These Setup instructions assume you have GitBash pre-installed ⚠️**
 
 If needed, please navigate to this link:  
 https://git-scm.com/download/  
@@ -63,10 +63,12 @@ Download Git and follow the setup wizard.
 <li>Click "Continue"
 <li>On the left-hand menu, click "Build", then select "Firestore Database"
 <li>You'll be brought to a page that says "Cloud Firestore". From here, select "Create database"
-<li>Select "Start in <strong>test mode</strong>, then hit next
+<li>Select "Start in <strong>test mode</strong>", then hit next
 <li>Select Enable
 <li>On the left-hand menu bar, select "Project Overview"
-<li>On the homepage, underneath "Get started by adding Firebase to app", select the </> icon
+<li>On the homepage, underneath "Get started by adding Firebase to app", select the:
+<br>
+<img src="icon.jpg" alt="</> icon">
 <li>For the App nickname, call this "skincare-beauty-services-app" then select "Register app"
 <li>Select "Continue to console"
 <br>
@@ -75,14 +77,10 @@ Download Git and follow the setup wizard.
 <details>
 <summary><strong>Connect Database to the Application</strong></summary>
 <ol>
-<li>On the left-hand menu bar, select "Project Overview"
-<li>On the homepage, underneath "Get started by adding Firebase to app", select the </> icon
-<li>For the App nickname, call this "skincare-beauty-services-app" then select "Register app"
-<li>Select "Continue to console"
-<li>Navigate back to your GitBash terminal and make sure you're in the projects root directory
-<li>install firebase by running,
+<li>Navigate back to your GitBash terminal and make sure you're in the project root directory
+<li>Install firebase by running,
 <strong>$ npm install firebase@9</strong>
-<li>Once installed - in the same directory - run,
+<li>Once installed - <em>in the same directory</em> - run,
 <strong>$ touch .env</strong>
 <li>Now open the project by running,
 <strong>$ code .</strong>
@@ -98,7 +96,9 @@ REACT_APP_FIREBASE_APP_ID =
 <li>Navigate back to Firebase console
 <li>On the left-hand menu bar, select the gear icon to the right of "Project Overview"
 <li>Select "Project settings" then scroll down the page until you find a script
-<li>One by one, go through all the values in this script that match up to the ones we listed in the .env file and paste them after the = sign (NOTE: leave out the "" quotation marks)
+<li>One by one, go through all the values in this script that match up to the ones we listed in the .env file and paste them after the = sign 
+<br>
+<small>(NOTE: leave out the "" quotation marks)</small>
 <li>Once finished with adding values to the .env file, navigate back to Firebase console
 <li>On the left-hand menu bar, click "Build" then select "Authentication"
 <li>Select "Get started"
@@ -118,7 +118,7 @@ REACT_APP_FIREBASE_APP_ID =
 <li>Run, 
 <strong>$ npm run start</strong>
 
-<small>NOTE: When accessing the Admin Portal, which is the sign-in path (```http://localhost:[YOUR-PORT-#]/sign-in```), use the credentials you used to create an authenticated account in Firebase
+<small>NOTE: When accessing the Admin Portal, which is the sign-in path (```http://localhost:[YOUR-PORT-#]/sign-in```), use the credentials you used to create an authenticated account in Firebase</small>
 <br>
 </details>
 
